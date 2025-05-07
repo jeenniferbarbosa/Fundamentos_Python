@@ -10,6 +10,7 @@ while True:
     [ 4 ] novos números
     [ 5 ] sair do programa
 Digite sua opção: """))
+
     if opcao == 1:
         soma = num1 + num2
         print(f"O resultado de {num1} + {num2} é {soma}.")
@@ -24,6 +25,7 @@ Digite sua opção: """))
         elif num1 > num2:
             print(f"O maior número entre {num1} e {num2} é {num1}.")
     print("+=" * 20)
+
     if opcao == 4:
         continue
     if opcao == 5:

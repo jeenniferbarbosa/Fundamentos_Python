@@ -6,11 +6,13 @@ total_num = 0
 soma = 0
 retorno = "S"
 maior = menor = 0
+
 while retorno == "S":
     num = int(input("Digite um valor: "))
     retorno = str(input("Quer continuar? [S/N]: ")).upper().strip()
     total_num += 1
     soma += num
+
     if total_num == 1:
         maior = menor = num
     else:
@@ -18,7 +20,9 @@ while retorno == "S":
             maior = num
         if num < menor:
             menor = num
+
 media = soma / total_num
+
 print(f"Você informou {total_num} digítos. A média desses valores é: {media:.2f}.")
 print(f"O maior o número informado foi {maior} e o menor foi {menor}.")
 print("Fim do programa! Obrigada.")

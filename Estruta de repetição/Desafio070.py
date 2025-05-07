@@ -11,6 +11,7 @@ while True:
     valor_produto = float(input("Valor do produto: R$ "))
     opcao = str(input("Gostaria de continuar [S/N]? ")).upper().strip()
     valor_total = valor_total + valor_produto
+
     while opcao != "N" and opcao != "S":
         opcao = str(input("Gostaria de continuar [S/N]? ")).upper().strip()
     if valor_produto > 1000.00:

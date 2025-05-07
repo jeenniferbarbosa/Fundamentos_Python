@@ -23,4 +23,5 @@ for cont in range(num, 0, -1):
     print(f"{cont}", end='')
     print(f" x " if cont > 1 else " = ", end='')
     fator *= cont
+
 print(f"{fator}")

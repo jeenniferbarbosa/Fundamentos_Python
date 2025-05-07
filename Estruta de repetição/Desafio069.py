@@ -10,11 +10,14 @@ while True:
     nome = str(input("Informe o nome: "))
     idade = int(input("Informe a idade: "))
     gen_sexual = str(input("Informe o genêro sexual [F/M]: ")).upper().strip()
+
     while gen_sexual != "M" and gen_sexual != "F":
         gen_sexual = str(input("Informe o genêro sexual [F/M]: ")).upper().strip()
     opcao = str(input("Gostaria de continuar [S/N]? ")).upper().strip()
+
     while opcao != "N" and opcao != "S":
         opcao = str(input("Gostaria de continuar [S/N]? ")).upper().strip()
+
     if opcao == "N":
         break
     if gen_sexual == "M" or gen_sexual == "m":
@@ -23,6 +26,7 @@ while True:
         cont += 1
     if (gen_sexual == "F" or gen_sexual == "f") and idade < 20:
         idade_feminino += 1
+
 print(f"Foram cadastradas {masculino} pessoas do genêro masculino.")
 print(f"Foram cadastradas {cont} pessoa(as) com mais de 18 anos.")
 print(f"Foram cadastradas {idade_feminino} mulheres com menos de 20 anos.")

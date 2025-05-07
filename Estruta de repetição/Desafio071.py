@@ -6,8 +6,10 @@
 print("====" * 6)
 print("      CAIXA SAQ+     ")
 print("====" * 6)
+
 valor_de_saque = int(input("Qual o valor você deseja sacar? R$ "))
 cedulas_disp = [50, 20, 10, 1]
+
 while valor_de_saque > 0:
     for cedula in cedulas_disp:
         quantidade = valor_de_saque // cedula

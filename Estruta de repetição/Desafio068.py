@@ -13,6 +13,7 @@ while True:
     jogador_par_impar = str(input("Par ou Ímpar? [P/I] ")).upper().strip()
     soma = jogador_num + pc
     print("˜˜˜˜˜˜˜" * 5)
+
     if soma % 2 == 0 and jogador_par_impar == 'P':
         vencidas += 1
         print(f"Você escolheu o número {jogador_num} e pc escolheu o número {pc}. A soma desses valores é: {soma}")

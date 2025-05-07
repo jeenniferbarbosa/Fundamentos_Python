@@ -5,10 +5,13 @@ from random import randint
 
 palpites = 0
 pc = randint(0, 10)
+
 print("Vou pensar em um número de 0 a 10. Tente adivinhar.")
+
 while True:
     jogador = int(input("Em que número eu pensei? "))
     palpites += 1
+
     if jogador == pc:
         print(f"Parabéns, você acertou! Seus palpites até o acerto foram {palpites}")
     else:

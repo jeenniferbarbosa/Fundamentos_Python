@@ -13,11 +13,13 @@ for pessoa in range(0, 4):
     print('==' * 35)
     soma += idade
     media = soma / 4
+
     if sexo == 'M' and idade > maior:
         maior = idade
         nome_masc = nome
     if sexo == "F" and idade < 20:
         feminino += 1
+
 print(f"A média de idade é: {media} anos.")
 print(f"O nome do homem mais velho é {nome} com {idade} anos.")
 print(f"{feminino} mulher(es) tem menos de 20 anos.")
