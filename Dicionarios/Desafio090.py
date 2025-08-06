@@ -1,7 +1,7 @@
 dados = dict()
 
 dados['nome'] = str(input("Nome do aluno: "))
-dados['media'] = float(input("Média do aluno: "))
+dados['media'] = float(input(f"Média de {dados['nome']}: "))
 
 if dados['media'] >= 7:
     dados['situacao'] = "APROVADO"
