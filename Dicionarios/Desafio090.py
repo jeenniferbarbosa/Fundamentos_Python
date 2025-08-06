@@ -3,11 +3,13 @@ dados = dict()
 dados['nome'] = str(input("Nome do aluno: "))
 dados['media'] = float(input("Média do aluno: "))
 
-if dados['media'] <= 7:
+if dados['media'] >= 7:
+    dados['situacao'] = "APROVADO"
+elif 5 <= dados['media'] < 7:
     dados['situacao'] = "RECUPERAÇÃO"
 else:
-    dados['situacao'] = "APROVADO"
+    dados['situacao'] = "REPROVADO"
 
-print("==" * 10)
+print("==" * 12)
 print(f"Nome: {dados['nome']}\nMédia: {dados['media']}\nSituação: {dados['situacao']}")
-print("==" * 10)
+print("==" * 12)
